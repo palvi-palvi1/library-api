@@ -1,5 +1,4 @@
 import authors from "../data/authors.js";
-
 let nextId = authors.length +1
 
 export const addAuthor = (req, res) => {
@@ -20,7 +19,6 @@ export const getAuthorById = (req, res) => {
     }
     res.status(200).json(author);
 };
-
 
 export const updateAuthor = (req, res) => {
     const id = (req.params.id);
